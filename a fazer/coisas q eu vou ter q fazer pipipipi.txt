@@ -1,3 +1,9 @@
 pag de erro p 404, 403, 500
 cookies pra itens no carrinho
 flash mostrando mensagemzinha correspondente aos erros
+
+----- corrigir a de  agr -----
+
+adicionar middleware
+tem 2 rotas de login 
+colocar mais pags - pag de admin
