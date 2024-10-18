@@ -1,8 +1,8 @@
-class Carro:
-    def __init__(self, modelo, ano, cor, preco):
-        self.modelo = modelo
-        self.ano = ano
-        self. cor = cor
-        self.preco = preco
-
-skyline = Carro("GT-R R34", 1998, "Prata e Azul", 500000 )
+class Usuario:
+    def __init__(self, nome, senha):
+        self.nome = nome
+        self.senha = senha
+        
+lista = []
+admin = Usuario("Pedro", "19")
+lista.append(admin)
