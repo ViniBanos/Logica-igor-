@@ -1,0 +1,26 @@
+create database vendas;
+
+create table Produto(
+	Codigo_Produto int primary key,
+	Descricao_Produto varchar(30) not null, 
+	Preco_produto float
+);
+    
+create table Nota_fiscal (
+	Numero_NF int primary key,
+	Data_NF date,
+	Valor_NF float
+);
+
+create table Itens (
+	Produto_Codigo_produto int primary key,
+    Nota_fiscal_Numero_NF int primary key,
+    NUm_Item int,
+    Qntde_item int
+);
+
+alter table Produto
+modify column Descricao_Produto varchar(50);
+
+alter table Nota_fiscal
+add column ICMS float after Numero_NF;
