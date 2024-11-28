@@ -1,3 +1,4 @@
+
 create database vendas;
 
 create table Produto(
@@ -24,3 +25,19 @@ modify column Descricao_Produto varchar(50);
 
 alter table Nota_fiscal
 add column ICMS float after Numero_NF;
+
+alter table Produto
+
+alter table Itens drop primary key;
+alter table Itens add Num_item int auto_increment primary key;
+
+describe Produto;
+DESCRIBE Nota_fiscal;
+
+alter table Nota_fiscal change Valor_NF ValorTotal_NF float;
+
+alter table Nota_fiscal drop column Data_NF;
+
+drop table Itens;
+
+alter table Nota_fiscal rename to Venda;
